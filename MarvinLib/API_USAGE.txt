@@ -1,0 +1,47 @@
+天机-孚晞 控制包 API usage C++
+
+LINUX:
+demo 1: MarvinLib/torque_joint_impedance_demo.cpp
+g++ torque_joint_impedance_demo.cpp -o torque_joint -L. -lMarvinSDK -Wl,-rpath=.
+./torque_joint
+
+demo 2: MarvinLib/torque_cart_impedance_demo.cpp
+g++ torque_cart_impedance_demo.cpp -o torque_cart -L. -lMarvinSDK -Wl,-rpath=.
+./torque_cart
+
+
+demo 3: MarvinLib/torque_force_impedance_demo.cpp
+g++ torque_force_impedance_demo.cpp -o torque_force -L. -lMarvinSDK -Wl,-rpath=.
+./torque_force
+
+demo 4: MarvinLib/drag_demo.cpp
+g++ drag_demo.cpp -o drag -L. -lMarvinSDK -Wl,-rpath=.
+./drag
+
+demo5: MarvinLib/position_demo.cpp
+g++ position_demo.cpp -o position -L. -lMarvinSDK -Wl,-rpath=.
+./position
+
+
+WINDOWS:
+demo 1: MarvinLib_dll/torque_joint_impedance_demo.cpp
+g++ torque_joint_impedance_demo.cpp -o torque_joint -L. -lMarvinSDK
+torque_joint.exe //或 Visual Studio 生成的可执行文件
+
+
+demo 2: MarvinLib_dll/torque_cart_impedance_demo.cpp
+g++ torque_cart_impedance_demo.cpp -o torque_cart -L. -lMarvinSDK -Wl,-rpath=.
+torque_cart.exe //或 Visual Studio 生成的可执行文件
+
+
+demo 3: MarvinLib_dll/torque_force_impedance_demo.cpp
+g++ torque_force_impedance_demo.cpp -o torque_force -L. -lMarvinSDK -Wl,-rpath=.
+torque_force.exe //或 Visual Studio 生成的可执行文件
+
+demo 4: MarvinLib_dll/drag_demo.cpp
+g++ drag_demo.cpp -o drag -L. -lMarvinSDK -Wl,-rpath=.
+drag.exe //或 Visual Studio 生成的可执行文件
+
+demo 5: MarvinLib_dll/position_demo.cpp
+g++ position_demo.cpp -o position -L. -lMarvinSDK
+position.exe //或 Visual Studio 生成的可执行文件

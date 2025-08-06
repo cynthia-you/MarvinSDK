@@ -1,0 +1,12 @@
+天机-孚晞 运动学计算 API usage C++
+
+LINUX：
+demo 1: MarvinKine/kine_demo.cpp
+g++ kine_demo.cpp -o kine -L. -lMarvinKine -Wl,-rpath=.
+./kine
+
+
+ WINDOWS:
+demo 1: MarvinKine_dll/kine_demo.cpp
+g++ kine_demo.cpp -o kine -L. -lMarvinKine -L. -lMarvinSDK
+KINE.exe //或 Visual Studio 生成的可执行文件
